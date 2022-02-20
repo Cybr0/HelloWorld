@@ -22,35 +22,71 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQk-f1-o5M">
-                                <rect key="frame" x="85" y="664" width="204" height="50"/>
-                                <color key="backgroundColor" red="0.98823529409999999" green="0.31764705879999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3qw-uh-Wr6"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="deR-u9-68d"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show Text">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mnu-Ah-Vly"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zew-dA-ksr">
+                                <rect key="frame" x="87.666666666666686" y="563" width="200" height="190"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWs-tD-gkB">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.31764705879999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="7FS-R0-BCy"/>
+                                            <constraint firstAttribute="height" constant="50" id="dcn-r2-axh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show Text">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="VTG-VV-Esq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dv9-7D-abQ">
+                                        <rect key="frame" x="0.0" y="70" width="200" height="50"/>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.31764705879999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Frl-an-gVI"/>
+                                            <constraint firstAttribute="height" constant="50" id="LPE-ig-YIv"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show Text">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJ3-NK-7Ja"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQk-f1-o5M">
+                                        <rect key="frame" x="0.0" y="140" width="200" height="50"/>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.31764705879999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3qw-uh-Wr6"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="deR-u9-68d"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show Text">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mnu-Ah-Vly"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hQk-f1-o5M" secondAttribute="bottom" constant="64" id="8x7-OR-fmx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zew-dA-ksr" secondAttribute="bottom" constant="25" id="Gb2-Rj-ztj"/>
                             <constraint firstItem="IPu-j8-sZ1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HsN-AZ-2tb"/>
                             <constraint firstItem="IPu-j8-sZ1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="hM8-7I-Tcl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="hQk-f1-o5M" secondAttribute="trailing" constant="86" id="oQd-Ja-efA"/>
-                            <constraint firstItem="hQk-f1-o5M" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="ykd-J4-gLt"/>
+                            <constraint firstItem="zew-dA-ksr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szW-IU-6OS"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="helloWorldLabel" destination="IPu-j8-sZ1" id="BrN-rF-HwQ"/>
+                        <outlet property="hiWorldLabel" destination="IPu-j8-sZ1" id="uXB-xD-ECa"/>
                         <outlet property="toggleButton" destination="hQk-f1-o5M" id="Ttb-cL-9bi"/>
                     </connections>
                 </viewController>
